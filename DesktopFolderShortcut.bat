@@ -1,5 +1,5 @@
-::ECHO OFF
-::SET shortcutName=
-::SET folderDestination=%cd%
-::START %folderDestination%\Shortcuts\%shortcutName%
-::TASKKILL /FI "WINDOWTITLE eq %folderDestination%"
+@echo off
+set shortcutName=""
+start %cd%\Shortcuts\%shortcutName%
+taskkill /fi "windowtitle eq %folderDestination%"
+exit
