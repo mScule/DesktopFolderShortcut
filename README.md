@@ -1,14 +1,16 @@
-# DesktopFolderShortcut
-"shortcut" that opens up a program, and closes the folder where it's located. It's for desktop shortcuts that are inside folders.
- 
+# DesktopFolderShortcuts.
+Have you ever stored program shortcuts in folders on desktop? Have you also noticed how tedious it is to close all the different folders after you have opened some of those programs? This is the reason why I wrote this little script that creates "shortcuts" that also closes the file explorer at the same time as you open up some of these programs!
+
+*Note: in order to make this script work. It's crucial that you do the following:"*
+
+*- File explorer -> select "view" -> select "Change folder and search options".*
+*- Folder options -> select "view".* 
+*- Check "Display the full path in the title bar".*
+*- Check "Launch folder windows in a separate process."*
+*- You are done!*
+
 ## How to use:
-1. Copy and paste the DesktopFolderShortcut.bat inside a folder where you want the shortcuts.  
-2. Create folder called "Shortcuts" inside the same folder, and put the real shortcuts (lnk,url,etc) in there.  
-3. Make copies of DesktopFolderShortcut.bat for every shortcut, and rename them as you wish.  
-4. Write the desired shortcut filename inside the quotation marks at shortcutName="".  
-5. Now, when you run this batch file it should open the program and close the folder that it's located in!  
-
-*Note: in order to make this script work. It's crucial to make the Shortcuts folder for the shortcuts!*
-
-## Why tho:
-I have many folders on my desktop that I use to store shortcuts. I got annoyed how the folders still stayed open after launching programs so I wrote this fewliner to help me with this problem. I think it works without any problems so I thought it would be cool to share :) Im not batch scripting professional tho so I don't know is there some downsides to this. 
+1. Copy "CreateShortcuts.bat" to the folder that contains the shortcuts, and execute the "CreateShortcuts.bat" file.  
+2. The batch file creates folder for the shortcuts inside the folder and creates a bat file for every shortcut.
+3. Click one of these shortcuts to open the desired program and the explorer will close up also!
+4. If you want to add more shortcuts, just drag the new ones in to the folder that contains the "CreateShortcuts.bat" and run it again.
